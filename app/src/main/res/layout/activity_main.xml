@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal"
+
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="82dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/nigeriaflag"
+             />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="82dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/book"
+             />
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="82dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ballon"
+             />
+
+        <ImageView
+            android:id="@+id/my_pics"
+            android:layout_width="82dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/pics"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:background="#003459">
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/full_name"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/full_name"
+            android:layout_alignRight="@id/full_name"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="-225dp"
+            android:layout_marginRight="-225dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/my_name"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/slack_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_name"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/slack_username"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_alignEnd="@id/slack_name"
+            android:layout_alignRight="@id/slack_name"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="-112dp"
+            android:layout_marginRight="-112dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/username"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slack_name"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/email_address"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_alignEnd="@id/email_address"
+            android:layout_alignRight="@id/email_address"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="-212dp"
+            android:layout_marginRight="-212dp"
+            android:text="@string/email"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="401dp"
+        android:layout_height="285dp"
+        android:background="#007EA7"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/hobbies"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hobby1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/read"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/hobby2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/code"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/hobby3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/teach"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/likes"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/rd"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/likes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/cd"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/dislikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/dislikes"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dislikes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/dislikes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dis"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="89dp"
+            android:layout_height="69dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/fb"
+            />
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="89dp"
+            android:layout_height="69dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/instagram"
+             />
+
+        <ImageView
+            android:id="@+id/icon5"
+            android:layout_width="89dp"
+            android:layout_height="69dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/twitter"
+             />
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>

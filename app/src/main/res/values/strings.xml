@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">single_Activity</string>
+
+    <string name="my_name">Paschaline Agughala</string>
+    <string name="full_name">FULL NAME:</string>
+    <string name="slack_username">SLACK USERNAME: </string>
+    <string name="username">Paschaline </string>
+    <string name="email_address">EMAIL ADDRESS:</string>
+    <string name="email">apasscar1@gmail.com</string>
+
+<!--hobbies-->
+    <string name="hobbies">My List of hobbies are:</string>
+    <string name="read">Reading</string>
+    <string name="code">Coding </string>
+    <string name="teach">Teaching </string>
+
+<!--    dislikes-->
+    <string name="dislikes">My List of dislikes are:</string>
+    <string name="dis">Dishonesty </string>
+    <string name="cheat">Cheating</string>
+
+
+<!--    likes-->
+    <string name="likes">My List of Likes are:</string>
+    <string name="rd">Reading novels</string>
+    <string name="cd">Coding</string>
+
+</resources>
